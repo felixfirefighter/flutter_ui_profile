@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_ui_profile/screens/profile_screen.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           elevation: 2,
         ),
       ),
+      routes: {'/': (context) => ProfileScreen()},
       initialRoute: '/',
     );
   }
